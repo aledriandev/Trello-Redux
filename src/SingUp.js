@@ -6,7 +6,7 @@ import {NavLink} from 'react-router-dom'
 
 const SingUp = ({}) => {
   return (
-    <div className='body text-center'>
+    <div className='text-center'>
       <img className='logo-big' src={logo}/>
       <Form horizontal>
         <FormGroup controlId="formHorizontalFirstName">

@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import logo from './whale.png';
 import './App.css';
 
-const Board = ({}) => {
+const Board = ({user}) => {
   return (
-    <h1>Board</h1>
+    <div className='text-center'>
+      <header></header>
+      <h1>{user.name}</h1>
+    </div>
   );
 }
 

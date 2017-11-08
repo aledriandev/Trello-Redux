@@ -16,16 +16,23 @@ const Sing = ({}) => {
   );
 }
 
-const App = ({}) => {
+const App = ({users}) => {
   return (
     <div className='body'>
       <BrowserRouter>
         <div>
           <Switch>
             <Route exact path='/' component={Sing}/>
-            <Route exact path="/sing-up" render={() =><SingUp/>}/>
-            <Route exact path="/sing-in" render={() =><SingIn/>}/>
-            <Route exact path="/board" render={() =><Board/>}/>
+            <Route exact path="/sing-up" render={() =><SingUp users={users}/>}/>
+            <Route exact path="/sing-in" render={() =><SingIn users={users}/>}/>
+            {
+              users.map((user,index)=>{
+                const path = '/boards-' + user.name;
+                return(
+                  <Route exact path={path} render={()=><Board user={user}/>}/>
+                );
+              })
+            }
             <Route render={() => <Redirect to="/" />} />
           </Switch>
         </div>

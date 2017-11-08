@@ -34,7 +34,7 @@ const users = [
     teams: [
       {
         name: 'Personal Boards',
-        members: [users[0].name],
+        members: ['user'],
         boards: [
           {
             name: 'Board 1',
@@ -74,7 +74,7 @@ const users = [
       },
       {
         name: 'States',
-        members: '',
+        members: ['user'],
         boards: [
           {
             name: 'Board 1',
@@ -122,7 +122,7 @@ const users = [
     teams: [
       {
         name: 'Personal Boards',
-        members: [users[0].name],
+        members: ['user'],
         boards: [
           {
             name: 'Board 1',
@@ -162,7 +162,7 @@ const users = [
       },
       {
         name: 'States',
-        members: '',
+        members: 'user',
         boards: [
           {
             name: 'Board 1',

@@ -5,6 +5,7 @@ import {BrowserRouter, Switch, Route, Redirect,NavLink} from 'react-router-dom'
 import SingUp from './SingUp.js'
 import SingIn from './SingIn.js'
 import Board from './Board.js'
+import BoardUser from './BoardUser.js'
 
 const Sing = ({}) => {
   return (
@@ -28,6 +29,14 @@ const App = ({users}) => {
             {
               users.map((user,index)=>{
                 const path = '/boards-' + user.name;
+                {
+                  // user.teams[1].boards.map((board,index)=>{
+                  //   const pathBoard = '/boards-'+ user.name + user.board.name;
+                  //   return(
+                  //     <Route exact path={pathBoard} render={()=><BoardUser/>}/>
+                  //   )
+                  // })
+                }
                 return(
                   <Route exact path={path} render={()=><Board user={user}/>}/>
                 );

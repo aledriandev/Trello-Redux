@@ -35,6 +35,41 @@ body{
 }
 
 .text-navlink{
-  font-size: 1.8em;
+  font-size: 1.3em;
   color: white;
+  opacity: 0.5;
+}
+
+.text-navlink:hover{
+  font-size: 1.3em;
+  color: white;
+  opacity: 1;
+}
+
+header{
+  height: 50px;
+  background-color: #414c7e;
+  padding: 3px;
+}
+
+.logo-small{
+  height: 44px;
+}
+
+.txt-white{
+  color: white;
+}
+
+.team{
+  overflow: auto;
+}
+
+.board{
+  background-color: #8e98c6;
+  padding: 20px;
+  text-justify: center;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  float: left;
 }

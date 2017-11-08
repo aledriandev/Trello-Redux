@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import logo from './whale.png';
 import './App.css';
 
-const Board = ({user}) => {
+const BoardUser = ({}) => {
   return (
     <div>
-      <header className='text-center'>
+      {/* <header className='text-center'>
         <img className='logo-small' src={logo}/>
       </header>
       <h1>{user.name}</h1>
@@ -20,9 +20,10 @@ const Board = ({user}) => {
             }
           </div>)
         }
-      </div>
+      </div> */}
+      HOLIIIII
     </div>
   );
 }
 
-export default Board;
+export default BoardUser;
